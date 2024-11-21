@@ -38,7 +38,7 @@ st.set_page_config(page_title="Data Analysis Tool", page_icon="🧠", layout="wi
 st.markdown("<style>body {background-color: #ffffff;}</style>", unsafe_allow_html=True)
 
 # Application Title and Descriptions
-st.title("🔍 Explainable Data Anaylsis Tool")
+st.title("🔍 Explainable Data Analysis Tool")
 st.markdown(
     """
     **Welcome to the Data Analysis Tool!** 👋  
