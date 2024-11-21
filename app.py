@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-# Bağımlılıkları kontrol et ve eksikse yükle
+
 required_packages = ['openpyxl', 'lime', 'shap']
 
 for package in required_packages:
@@ -59,7 +59,7 @@ if uploaded_file is not None:
     if uploaded_file.name.endswith('.csv'):
         data = pd.read_csv(uploaded_file, sep=None, engine='python')  # Load CSV with auto delimiter detection
     else:
-        # Eğer Excel dosyası ise openpyxl motorunu kullanarak oku
+        
         data = pd.read_excel(uploaded_file, engine='openpyxl')
     data = data.dropna()  # Drop any missing values
     st.sidebar.success("Data successfully loaded!")
